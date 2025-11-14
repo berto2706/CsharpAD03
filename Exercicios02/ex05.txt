@@ -1,0 +1,25 @@
+namespace CsharpExercicios;
+
+class Program {
+    static void Main(string[] args) {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma() {
+        Console.WriteLine("Programa Quiz Friends");
+    }
+
+    public static void Calculo() {
+        Console.Write("Qual é o personagem de Friends que trabalha com TI? ");
+        string resposta = Console.ReadLine();
+
+        bool correta = false;
+
+        if (resposta == "Chandler") {
+            correta = true;
+        }
+
+        Console.WriteLine($"Resposta correta: {correta}");
+    }
+}

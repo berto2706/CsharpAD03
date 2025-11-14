@@ -1,0 +1,28 @@
+namespace CsharpExercicios;
+
+class Program {
+    static void Main(string[] args) {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma() {
+        Console.WriteLine("Programa Tempo de Leitura");
+    }
+
+    public static void Calculo() {
+        Console.Write("Nome do livro: ");
+        string nome = Console.ReadLine();
+
+        Console.Write("Total de páginas: ");
+        int paginas = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("Segundos por página: ");
+        double seg = Convert.ToDouble(Console.ReadLine());
+
+        double totalSeg = paginas * seg;
+        double horas = totalSeg / 3600;
+
+        Console.WriteLine($"Você lerá {nome} em {horas} horas.");
+    }
+}

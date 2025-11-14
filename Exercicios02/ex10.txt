@@ -1,0 +1,42 @@
+namespace CsharpExercicios;
+
+class Program {
+    static void Main(string[] args) {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma() {
+        Console.WriteLine("Programa do Volume dos Cilindros");
+    }
+
+    public static void Calculo() {
+        Console.Write("Diâmetro 1: ");
+        double d1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Altura 1: ");
+        double h1 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Diâmetro 2: ");
+        double d2 = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Altura 2: ");
+        double h2 = Convert.ToDouble(Console.ReadLine());
+
+        double r1 = d1 / 2;
+        double r2 = d2 / 2;
+
+        double v1 = Math.PI * r1 * r1 * h1;
+        double v2 = Math.PI * r2 * r2 * h2;
+
+        bool pode = false;
+
+        if (v1 <= v2) {
+            pode = true;
+        }
+
+        Console.WriteLine($"O primeiro cilindro tem volume de {v1}");
+        Console.WriteLine($"O segundo cilindro tem volume de {v2}");
+        Console.WriteLine($"É possível transferir o primeiro para o segundo? {pode}");
+    }
+}

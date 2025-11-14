@@ -1,0 +1,30 @@
+namespace CsharpExercicios;
+
+class Program {
+    static void Main(string[] args) {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma() {
+        Console.WriteLine("Programa do Tanque");
+    }
+
+    public static void Calculo() {
+        Console.Write("Capacidade do tanque: ");
+        double capacidade = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Combustível atual: ");
+        double atual = Convert.ToDouble(Console.ReadLine());
+
+        double limite = capacidade / 4;
+
+        bool precisa = false;
+
+        if (atual <= limite) {
+            precisa = true;
+        }
+
+        Console.WriteLine($"Carro precisa ser reabastecido? {precisa}");
+    }
+}

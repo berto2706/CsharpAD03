@@ -1,0 +1,25 @@
+namespace CsharpExercicios;
+
+class Program {
+    static void Main(string[] args) {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma() {
+        Console.WriteLine("Programa do Semáforo");
+    }
+
+    public static void Calculo() {
+        Console.Write("Cor do semáforo: ");
+        string cor = Console.ReadLine();
+
+        bool pode = false;
+
+        if (cor == "Verde") {
+            pode = true;
+        }
+
+        Console.WriteLine($"Pode atravessar? {pode}");
+    }
+}

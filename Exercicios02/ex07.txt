@@ -1,0 +1,31 @@
+namespace CsharpExercicios;
+
+class Program {
+    static void Main(string[] args) {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma() {
+        Console.WriteLine("Programa do IMC");
+    }
+
+    public static void Calculo() {
+        Console.Write("Altura: ");
+        double altura = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Peso: ");
+        double peso = Convert.ToDouble(Console.ReadLine());
+
+        double imc = peso / (altura * altura);
+
+        bool acima = false;
+
+        if (imc >= 25) {
+            acima = true;
+        }
+
+        Console.WriteLine($"Seu IMC é {imc}");
+        Console.WriteLine($"Está acima do peso ideal? {acima}");
+    }
+}

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Lucas Viana\\Desktop\\Projetos\\CsharpExercicios\\CsharpExercicios.csproj": {}
+    "C:\\Users\\Lucas Viana\\Desktop\\Projetos\\CsharpExercicios\\CsharpAD03\\CsharpExercicios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Lucas Viana\\Desktop\\Projetos\\CsharpExercicios\\CsharpExercicios.csproj": {
+    "C:\\Users\\Lucas Viana\\Desktop\\Projetos\\CsharpExercicios\\CsharpAD03\\CsharpExercicios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Lucas Viana\\Desktop\\Projetos\\CsharpExercicios\\CsharpExercicios.csproj",
+        "projectUniqueName": "C:\\Users\\Lucas Viana\\Desktop\\Projetos\\CsharpExercicios\\CsharpAD03\\CsharpExercicios.csproj",
         "projectName": "CsharpExercicios",
-        "projectPath": "C:\\Users\\Lucas Viana\\Desktop\\Projetos\\CsharpExercicios\\CsharpExercicios.csproj",
+        "projectPath": "C:\\Users\\Lucas Viana\\Desktop\\Projetos\\CsharpExercicios\\CsharpAD03\\CsharpExercicios.csproj",
         "packagesPath": "C:\\Users\\Lucas Viana\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Lucas Viana\\Desktop\\Projetos\\CsharpExercicios\\obj\\",
+        "outputPath": "C:\\Users\\Lucas Viana\\Desktop\\Projetos\\CsharpExercicios\\CsharpAD03\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lucas Viana\\AppData\\Roaming\\NuGet\\NuGet.Config"
