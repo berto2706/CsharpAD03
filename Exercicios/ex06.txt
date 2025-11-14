@@ -1,0 +1,34 @@
+using System;
+
+namespace CsharpExercicios;
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa das paradas para abastecimento");
+    }
+
+    public static void Calculo()
+    {
+        int capacidadeTanque = 50;
+        int consumo = 10;          // km por litro
+        int distancia = 700;       // km
+
+        int autonomia = capacidadeTanque * consumo;
+
+        int paradas = distancia / autonomia;
+
+        if (distancia % autonomia == 0)
+            paradas += 1;
+        else
+            paradas += 1;
+
+        Console.WriteLine($"Você precisará fazer {paradas} paradas para abastecer.");
+    }
+}

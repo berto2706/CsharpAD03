@@ -1,0 +1,24 @@
+using System;
+
+namespace CsharpExercicios;
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa para converter reais em dólar");
+    }
+
+    public static void Calculo()
+    {
+        double reais = 5.16;
+        double dolar = reais / 5.16;
+
+        Console.WriteLine(dolar);
+    }
+}

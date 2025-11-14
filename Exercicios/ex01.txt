@@ -1,0 +1,26 @@
+using System;
+
+namespace CsharpExercicios;
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa do desconto em reais");
+    }
+
+    public static void Calculo()
+    {
+        double valorCompra = 1000;
+        double cupom = 100;
+
+        double total = valorCompra - cupom;
+
+        Console.WriteLine($"Compra finalizada! O total é de R$ {total}");
+    }
+}

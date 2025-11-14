@@ -1,0 +1,24 @@
+using System;
+
+namespace CsharpExercicios;
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa para converter kg em gramas");
+    }
+
+    public static void Calculo()
+    {
+        double kg = 1.5;
+        double gramas = kg * 1000;
+
+        Console.WriteLine(gramas);
+    }
+}

@@ -1,0 +1,28 @@
+﻿using System;
+
+namespace CsharpExercicios;
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa do salário líquido");
+    }
+
+    public static void Calculo()
+    {
+        double salarioBase = 1000;
+        double bonusPercentual = 20;
+        double descontos = 200;
+
+        double bonus = salarioBase * (bonusPercentual / 100);
+        double salarioLiquido = salarioBase + bonus - descontos;
+
+        Console.WriteLine($"Seu salário líquido é de R$ {salarioLiquido}");
+    }
+}

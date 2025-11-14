@@ -1,0 +1,26 @@
+using System;
+
+namespace CsharpExercicios;
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa do açaí tamanho único");
+    }
+
+    public static void Calculo()
+    {
+        int quantidade = 2;
+        double preco = 13.5;
+
+        double total = quantidade * preco;
+
+        Console.WriteLine($"Total à pagar é R$ {total}");
+    }
+}

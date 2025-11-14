@@ -1,0 +1,31 @@
+using System;
+
+namespace CsharpExercicios;
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa do açaí P/M/G");
+    }
+
+    public static void Calculo()
+    {
+        int qP = 2;
+        int qM = 0;
+        int qG = 1;
+
+        double precoP = 13.5;
+        double precoM = 15.0;
+        double precoG = 17.5;
+
+        double total = qP * precoP + qM * precoM + qG * precoG;
+
+        Console.WriteLine($"Total à pagar é R$ {total}");
+    }
+}

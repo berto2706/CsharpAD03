@@ -1,0 +1,26 @@
+using System;
+
+namespace CsharpExercicios;
+class Program
+{
+    static void Main(string[] args)
+    {
+        ApresentarPrograma();
+        Calculo();
+    }
+
+    public static void ApresentarPrograma()
+    {
+        Console.WriteLine("Programa para calcular parcelas");
+    }
+
+    public static void Calculo()
+    {
+        double total = 1200;
+        int parcelas = 10;
+
+        double valorParcela = total / parcelas;
+
+        Console.WriteLine($"Sua compra de R$ {total} em {parcelas}x de R$ {valorParcela} foi concluída");
+    }
+}
